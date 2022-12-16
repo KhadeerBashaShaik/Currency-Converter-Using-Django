@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+Input
+{% endblock title %}
+{% block body %}
+<form action = "/result" method="post">
+{% csrf_token %}
+<tr><br>
+    <center>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <div class="mb-3" style="width: 250px; align: center">
+        <label for="exampleFormControlInput1" class="form-label">From :- </label>
+        <input type="text" class="form-control" id="from" name="from" placeholder="Symbol">
+        <label for="exampleFormControlInput1" class="form-label">To :-</label>
+        <input type="text" class="form-control" id="to" name="to" placeholder="Symbol">
+        <label for="exampleFormControlInput1" class="form-label">Enter the Amount :-</label>
+        <input type="text" class="form-control" id="amount" name="amount" placeholder="Symbol">
+      </div>
+    
+    <td><input type="submit" class="btn btn-outline-danger" value="View"></td>
+</center>
+<br><br><br><br><br><br><br>
+    </tr></form>
+{% endblock body %}

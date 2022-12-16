@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block head %}
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content=""><meta name="author" content=""><link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"><link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">< !-- Bootstrap core CSS --><link href="../../dist/css/bootstrap.min.css" rel="stylesheet">< !-- Custom styles for this template --><link href="album.css" rel="stylesheet">
+</style>
+{% endblock head %}
+{% block body %}
+
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">About Us</h1>
+      <p class="lead text-muted">We are from <b>KL University</b></p>
+      <p> Below Are The People Who
+        Worked In Our Project</p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="" height=375px>
+            <div class="card-body">
+              <p class="card-text">Name- <br>Email-@kluniversity.in<br>Contribution- Middle Ware Designer</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="" height=375px>
+            <div class="card-body">
+              <p class="card-text">Name- <br>Email- @kluniversity.in<br>Contribution- BackEnd Designer</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="" height="375px"
+              alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Name- <br>Email- @kluniversity.in<br>Contribution- Front End Implementation</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <div class="mx-auto" style="width: 200px">
+      <center>
+      <p class="float-right" my-4>
+        <a href="#" class="btn btn-outline-primary">Back to top</a>
+      </p>
+      <p class="float-right">
+        <a href="/" class="btn btn-outline-danger">Go To Home</a>
+      </p>
+    </center>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+{% endblock body %}
